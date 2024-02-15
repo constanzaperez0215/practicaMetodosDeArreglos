@@ -14,4 +14,9 @@ for(let tarea of tareas){
     html += `<li>${tarea} </li>`
 }
 lista.innerHTML= html
+cuentaTareas.textContent = `Total de tareas: ${tareas.length}`;
 })
+
+// actividad 6
+ const cuentaTareas = document.getElementById("cuenta-tareas")
+
