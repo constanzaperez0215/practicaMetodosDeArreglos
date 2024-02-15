@@ -67,13 +67,13 @@ console.log(peliculas)
 
 body = document.querySelector("#container")
 const valores = [200, 100, 500, 300, 250]
-valores.forEach(x => body.innerHTML += `<p> ${2* x} </p>`)
+// valores.forEach(x => body.innerHTML += `<p> ${2* x} </p>`)
 
 // Transformando arreglos .map
 
 //const valores = [200, 100, 500, 300, 250]
 const nuevos_valores = valores.map(x => 2* x)
-console.log(nuevos_valores) 
+console.log(nuevos_valores)
 
 //  Filtrado de elementos
 
@@ -141,12 +141,12 @@ console.log(ordenado2)
 
     // ordenado de objetos
 
-    const estudiantes2 = [
-        { nombre: "Juan", nota: 3.4 },
-        { nombre: "Laura", nota: 6 },
-        { nombre: "Katherine", nota: 4.3 },
-        { nombre: "Jonathan", nota: 5.4 }
-        ];
-        const estudiantesOrdenado = estudiantes2.sort((x,y) => x.nota - y.nota)
-        console.table(estudiantesOrdenado)
-        
+const estudiantes2 = [
+    { nombre: "Juan", nota: 3.4 },
+    { nombre: "Laura", nota: 6 },
+    { nombre: "Katherine", nota: 4.3 },
+    { nombre: "Jonathan", nota: 5.4 }
+];
+
+const estudiantesOrdenado = estudiantes2.sort((x,y) => x.nota - y.nota)
+console.table(estudiantesOrdenado)
