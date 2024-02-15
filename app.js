@@ -71,5 +71,24 @@ valores.forEach(x => body.innerHTML += `<p> ${2* x} </p>`)
 
 // Transformando arreglos .map
 
+//const valores = [200, 100, 500, 300, 250]
 const nuevos_valores = valores.map(x => 2* x)
 console.log(nuevos_valores) 
+
+//  Filtrado de elementos
+
+// const valores = [200, 100, 500, 300, 250]
+const valores_filtrados = valores.filter(x => x >= 300)
+console.log(valores_filtrados) /* [500, 300] */
+
+
+const estudiantes = [
+    { nombre: "Juan", nota: 3.4 },
+    { nombre: "Laura", nota: 6 },
+    { nombre: "Katherine", nota: 4.3 },
+    { nombre: "Jonathan", nota: 5.4 }
+    ];
+    const estudiantesAprobados =
+    estudiantes.filter( estudiante => estudiante.nota >= 4.5 )
+    console.table(estudiantesAprobados)
+    
