@@ -108,3 +108,45 @@ const garzones = trabajadores.filter(garzones => garzones.cargo === "garzón")
 
 console.log(garzones.length)
 console.table(garzones)
+
+
+// Unir arreglos .concat
+
+const autosCompactos = [
+    {marca: 'Toyota', modelo: 'Corolla', combustible: 'Gasolina'},
+    {marca: 'Mazda', modelo: '3', combustible: 'Gasolina'},
+    {marca: 'Honda', modelo: 'Civic', combustible: 'Gasolina'},
+    {marca: 'Bmw', modelo: '116d', combustible: 'Diesel'},
+];
+const autosDeportivos = [
+    {marca: 'Opel', modelo: 'Astra OPC', combustible: 'Gasolina'},
+    {marca: 'Renault', modelo: 'Megane RS', combustible: 'Gasolina'},
+    {marca: 'Mitsubishi', modelo: 'Lancer Evo', combustible: 'Gasolina'},
+];
+
+const autos = autosCompactos.concat(autosDeportivos);
+console.log(autos);
+
+// Ordenar elementos .sort
+
+    //ordenado ascendente 
+const arr1 = [4,1,2,3]
+const ordenado = arr1.sort()
+console.log(ordenado)
+
+    // ordenado descendente
+const arr2 = [4,1,2,3]
+const ordenado2 = arr2.sort((x,y) => y - x)
+console.log(ordenado2)
+
+    // ordenado de objetos
+
+    const estudiantes2 = [
+        { nombre: "Juan", nota: 3.4 },
+        { nombre: "Laura", nota: 6 },
+        { nombre: "Katherine", nota: 4.3 },
+        { nombre: "Jonathan", nota: 5.4 }
+        ];
+        const estudiantesOrdenado = estudiantes2.sort((x,y) => x.nota - y.nota)
+        console.table(estudiantesOrdenado)
+        
