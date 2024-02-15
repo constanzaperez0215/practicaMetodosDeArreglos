@@ -87,8 +87,24 @@ const estudiantes = [
     { nombre: "Laura", nota: 6 },
     { nombre: "Katherine", nota: 4.3 },
     { nombre: "Jonathan", nota: 5.4 }
-    ];
-    const estudiantesAprobados =
-    estudiantes.filter( estudiante => estudiante.nota >= 4.5 )
-    console.table(estudiantesAprobados)
-    
+];
+const estudiantesAprobados = estudiantes.filter( estudiante => estudiante.nota >= 4.5 )
+console.table(estudiantesAprobados)
+
+// Actividad 4: Filtrar y contar
+
+let trabajadores = [
+    {nombre: "Contanza", cargo: "Chef"},
+    {nombre: "Luis", cargo: "garzón"},
+    {nombre: "Estefany", cargo: "Administradora"},
+    {nombre: "Andrés", cargo: "Recepcionista"},
+    {nombre: "Pedro", cargo: "garzón"},
+    {nombre: "Felipe", cargo: "Aseo"},
+    {nombre: "Maria", cargo: "garzón"},
+    {nombre: "Diego", cargo: "garzón"},
+]
+
+const garzones = trabajadores.filter(garzones => garzones.cargo === "garzón")
+
+console.log(garzones.length)
+console.table(garzones)
