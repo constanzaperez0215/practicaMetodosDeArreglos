@@ -53,11 +53,23 @@ const peliculas = [
     {id: 3, nombre: "Terminator"},
     {id: 4, nombre: "Ip Man"},
     {id: 5, nombre: "Rocky"},
-    ]
+]
 
-    const encontrarPelicula = peliculas.findIndex(pelicula => pelicula.nombre === "Terminator")
+const encontrarPelicula = peliculas.findIndex(pelicula => pelicula.nombre === "Terminator")
 
-    peliculas.splice(encontrarPelicula,1)
+peliculas.splice(encontrarPelicula,1)
 
-    console.log(encontrarPelicula)
-    console.log(peliculas)
+console.log(encontrarPelicula)
+console.log(peliculas)
+
+
+// Ejemplos iteración de arreglos .forEaach
+
+body = document.querySelector("#container")
+const valores = [200, 100, 500, 300, 250]
+valores.forEach(x => body.innerHTML += `<p> ${2* x} </p>`)
+
+// Transformando arreglos .map
+
+const nuevos_valores = valores.map(x => 2* x)
+console.log(nuevos_valores) 
