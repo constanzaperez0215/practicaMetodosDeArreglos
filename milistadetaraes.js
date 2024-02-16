@@ -17,8 +17,6 @@ for(let tarea of tareas){
 lista.innerHTML= html
 cuentaTareas.textContent = `Total de tareas: ${tareas.length}`;
 
-
-
 console.log(tareas)
 })
 
